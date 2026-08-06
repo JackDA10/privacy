@@ -1,0 +1,108 @@
+/* Shared styling for the privacy + support pages.
+   Celestial navy/gold, matching the apps. No external fonts or assets —
+   these pages must render on a slow connection in an App Review browser. */
+
+:root {
+  --bg:        #F7F8FB;
+  --surface:   #FFFFFF;
+  --ink:       #14213A;
+  --ink-muted: #56617D;
+  --rule:      #DFE3EC;
+  --gold:      #B8860B;
+  --navy:      #1B2A4E;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:        #0B1220;
+    --surface:   #131C30;
+    --ink:       #E8ECF5;
+    --ink-muted: #9AA5BE;
+    --rule:      #24314C;
+    --gold:      #D9A93B;
+    --navy:      #C7D2E8;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 2.5rem 1.25rem 4rem;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 14px;
+  padding: 2.5rem 2.25rem 3rem;
+}
+
+@media (max-width: 34rem) {
+  body { padding: 1rem 0.75rem 3rem; }
+  main { padding: 1.75rem 1.25rem 2.25rem; border-radius: 10px; }
+}
+
+h1 {
+  margin: 0 0 0.35rem;
+  font-size: 1.85rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+}
+
+h2 {
+  margin: 2.25rem 0 0.6rem;
+  font-size: 1.15rem;
+  letter-spacing: -0.01em;
+  color: var(--navy);
+}
+
+.eyebrow {
+  margin: 0 0 1.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.lede {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  color: var(--ink);
+}
+
+p, li { color: var(--ink-muted); }
+p { margin: 0 0 0.9rem; }
+
+ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+li { margin-bottom: 0.4rem; }
+
+strong { color: var(--ink); font-weight: 600; }
+
+a { color: var(--gold); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 2.5rem 0 1.5rem;
+}
+
+.updated {
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+}
+
+.applist { list-style: none; padding-left: 0; }
+.applist li { margin-bottom: 0.55rem; }
+.applist a { font-weight: 600; }
+.applist span { color: var(--ink-muted); font-weight: 400; }
