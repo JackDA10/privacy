@@ -12,6 +12,7 @@ Served by GitHub Pages from the repository root.
 |---|---|
 | Shared policy | `https://jackda10.github.io/privacy/` |
 | Pitot-Static | `https://jackda10.github.io/privacy/pitot-static/` |
+| Airspace Trainer | `https://jackda10.github.io/privacy/airspace-trainer/` |
 
 Use the **per-app** URL in App Store Connect, for both the Privacy Policy and Support
 fields — not the shared one. Every app gets its own page from day one even when the text
