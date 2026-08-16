@@ -13,6 +13,9 @@ Served by GitHub Pages from the repository root.
 | Shared policy | `https://jackda10.github.io/privacy/` |
 | Pitot-Static | `https://jackda10.github.io/privacy/pitot-static/` |
 | Airspace Trainer | `https://jackda10.github.io/privacy/airspace-trainer/` |
+| Partial Panel Trainer | `https://jackda10.github.io/privacy/partial-panel/` |
+| IFR Clearance Trainer | `https://jackda10.github.io/privacy/ifr-clearance/` |
+| VOR & HSI Trainer | `https://jackda10.github.io/privacy/vor-hsi/` |
 
 Use the **per-app** URL in App Store Connect, for both the Privacy Policy and Support
 fields — not the shared one. Every app gets its own page from day one even when the text
@@ -23,9 +26,15 @@ another review pass.
 
 1. `cp TEMPLATE.html <app-slug>/index.html`
 2. Replace `APP NAME` and `DATE`.
-3. Correct the "What this app stores" section to what that app actually persists.
-4. Add it to the app list in `index.html`.
-5. Point that app's two URL fields at `https://jackda10.github.io/privacy/<app-slug>/`.
+3. Correct the "What this app stores" section to what that app actually persists — find
+   the real `UserDefaults` keys, and confirm whether the app has a control that clears
+   them. Not every app does: Partial Panel has none, which is why the shared policy says
+   *most* apps rather than *every* app.
+4. If the app opens any URL — a citation chip, the *More from AutoPilot* screen — give it
+   a "Links out of the app" section. The flat "no network requests" bullet alone
+   misdescribes what the user watches happen.
+5. Add it to the app list in `index.html` and to the URL table above.
+6. Point that app's two URL fields at `https://jackda10.github.io/privacy/<app-slug>/`.
 
 ## The one rule
 
