@@ -16,6 +16,7 @@ Served by GitHub Pages from the repository root.
 | Partial Panel Trainer | `https://jackda10.github.io/privacy/partial-panel/` |
 | IFR Clearance Trainer | `https://jackda10.github.io/privacy/ifr-clearance/` |
 | VOR & HSI Trainer | `https://jackda10.github.io/privacy/vor-hsi/` |
+| AutoPilot | `https://jackda10.github.io/privacy/autopilot/` |
 
 Use the **per-app** URL in App Store Connect, for both the Privacy Policy and Support
 fields — not the shared one. Every app gets its own page from day one even when the text
@@ -39,9 +40,12 @@ another review pass.
 ## The one rule
 
 **This page and the App Privacy answers in App Store Connect have to agree.** Review
-checks them against each other, and a mismatch is a rejection. Today every app answers
-"Data Not Collected" across the board, which is true — there is no networking code in
-any of them.
+checks them against each other, and a mismatch is a rejection. Today every study app
+answers "Data Not Collected" across the board, which is true — there is no networking
+code in any of them. AutoPilot is the exception: a connected service, so its page is a
+complete standalone policy matching its three declared data types (email address, user
+ID, user content — all app functionality, no tracking) — see `autopilot/index.html`'s
+header comment for the documents that must stay in sync.
 
 If an app ever gains analytics, sync, or an account, that is not a small edit: update
 that app's page, update the shared policy, and change the App Privacy answers in the
