@@ -11,11 +11,13 @@ Served by GitHub Pages from the repository root.
 | Page | URL |
 |---|---|
 | Shared policy | `https://jackda10.github.io/privacy/` |
+| Racetrack: IFR Hold Trainer | `https://jackda10.github.io/privacy/racetrack/` |
 | Pitot-Static | `https://jackda10.github.io/privacy/pitot-static/` |
 | Airspace Trainer | `https://jackda10.github.io/privacy/airspace-trainer/` |
 | Partial Panel Trainer | `https://jackda10.github.io/privacy/partial-panel/` |
 | IFR Clearance Trainer | `https://jackda10.github.io/privacy/ifr-clearance/` |
 | VOR & HSI Trainer | `https://jackda10.github.io/privacy/vor-hsi/` |
+| Top of Descent Calculator | `https://jackda10.github.io/privacy/top-of-descent/` |
 | AutoPilot | `https://jackda10.github.io/privacy/autopilot/` |
 
 Use the **per-app** URL in App Store Connect, for both the Privacy Policy and Support
@@ -29,8 +31,9 @@ another review pass.
 2. Replace `APP NAME` and `DATE`.
 3. Correct the "What this app stores" section to what that app actually persists — find
    the real `UserDefaults` keys, and confirm whether the app has a control that clears
-   them. Not every app does: Partial Panel has none, which is why the shared policy says
-   *most* apps rather than *every* app.
+   them. Not every app does: Partial Panel has none, and Racetrack stores only two
+   review-prompt values with nothing worth clearing, which is why the shared policy
+   says *most* apps rather than *every* app.
 4. If the app opens any URL — a citation chip, the *More from AutoPilot* screen — give it
    a "Links out of the app" section. The flat "no network requests" bullet alone
    misdescribes what the user watches happen.
