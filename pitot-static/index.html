@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pitot-Static &mdash; Privacy &amp; Support</title>
+<title>Pitot-Static: Privacy &amp; Support</title>
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -11,41 +11,79 @@
 
   <p class="eyebrow">Jack Post &middot; iOS Apps</p>
   <h1>Pitot-Static</h1>
-  <p class="lede">This app collects no data about you and makes no network
-  connections.</p>
+  <p class="lede">This app collects no data about you and makes no network requests of its
+  own.</p>
 
   <h2>What this app stores</h2>
-  <p>One thing, on your device only: which chapters you have opened and your best score
-  in each quiz section. It is kept in the app's own storage, never leaves the phone or
-  iPad, and is removed when you delete the app. The chapter list has a reset control
-  that clears it at any time.</p>
+  <p>Two things, on your device only. None of it leaves the device, and deleting the app
+  removes all of it.</p>
+  <ul>
+    <li><strong>Which chapters you have opened and your best score in each quiz
+        section</strong> (stored as <code>PitotStatic.progress.v1</code>). The chapter list
+        has a <em>Reset progress</em> control at the bottom that clears it at any time.</li>
+    <li><strong>Starting with version 1.0.1, when the app last asked you for a
+        rating</strong>: the version that asked (stored as
+        <code>AutoPilot.review.lastAskedVersion</code>) and the date it asked (stored as
+        <code>AutoPilot.review.lastAskedDate</code>). The app asks only right after you pass
+        a quiz, at most once per version and no more than once in 120 days, and these two
+        records are how it keeps to that. They hold nothing else. <em>Reset progress</em>
+        leaves them alone, and deleting the app clears them.</li>
+  </ul>
 
   <h2>What this app does not do</h2>
   <ul>
     <li>No account, sign-in, or email address</li>
     <li>No analytics, tracking, or advertising</li>
     <li>No third-party SDKs of any kind</li>
-    <li>No network requests &mdash; the app contains no networking code, so it works
-        identically in airplane mode</li>
+    <li>No network requests of its own. Every chapter, diagram and quiz question is inside
+        the app, and it works fully in airplane mode. What can leave the device is listed
+        under <em>Links out of the app</em> below, and each item there starts with something
+        you tap or pass.</li>
+    <li>No location, camera, microphone, contacts, photos or health access. The app has no
+        permission prompt at all.</li>
     <li>No purchases or subscriptions</li>
   </ul>
 
+  <h2>Links out of the app</h2>
+  <p>Starting with version 1.0.1, the app has these, and nothing else:</p>
+  <ul>
+    <li><strong>Privacy Policy and Support.</strong> In the <em>More</em> menu at the top of
+        the chapter list, and on the <em>More from AutoPilot</em> screen, these open this
+        page in your browser.</li>
+    <li><strong>flywithautopilot.com.</strong> The last row of the <em>More from
+        AutoPilot</em> screen opens it in your browser.</li>
+    <li><strong>Other AutoPilot apps.</strong> Tapping one of them on the <em>More from
+        AutoPilot</em> screen opens Apple's App Store page for that app inside Pitot-Static,
+        rather than in a browser. The page is Apple's, and iOS loads it. If it cannot load,
+        the same listing opens in the App Store instead. The app icons on that screen are
+        built into Pitot-Static, so showing the list loads nothing.</li>
+    <li><strong>Rating the app.</strong> Apple's own rating prompt may appear shortly after
+        you pass a quiz, within the limits above. iOS draws it, and a rating you choose to
+        give goes to Apple. The app is never told whether you rated it or what you
+        said.</li>
+  </ul>
+  <p>The app itself sends nothing with any of these: no identifier, no progress, nothing
+  about you. Once a page is open in your browser or in Apple's App Store view, that site's
+  or Apple's privacy practices apply rather than this one's.</p>
+
   <h2>About the content</h2>
-  <p>The lessons are written from the FAA's own handbooks &mdash; the Pilot's Handbook
-  of Aeronautical Knowledge (FAA&#8209;H&#8209;8083&#8209;25C), the Instrument Procedures
-  Handbook (FAA&#8209;H&#8209;8083&#8209;16B) &mdash; and from Title 14 of the Code of
-  Federal Regulations. All diagrams are drawn in the app itself.</p>
+  <p>The lessons are written from the FAA's own handbooks, the Pilot's Handbook of
+  Aeronautical Knowledge (FAA&#8209;H&#8209;8083&#8209;25C) and the Instrument Procedures
+  Handbook (FAA&#8209;H&#8209;8083&#8209;16B), and from Title 14 of the Code of Federal
+  Regulations. The airspeed markings and V&#8209;speeds used as the worked example are the
+  Cessna 172S figures from its Pilot's Operating Handbook. All diagrams are drawn in the app
+  itself.</p>
   <p>This is a study aid for training, not an operational reference. Fly the aircraft's
   own approved flight manual, its checklists, and current regulations.</p>
 
-  <h2>Support</h2>
+  <h2 id="support">Support</h2>
   <p>Found an error in the content, or something not working right? Please write to
   <a href="mailto:admin@flywithautopilot.com">admin@flywithautopilot.com</a>. Corrections to
-  the aeronautical content are especially welcome &mdash; say which chapter and what it
-  should say.</p>
+  the aeronautical content are especially welcome: say which chapter and what it should
+  say, and include your device and iOS version.</p>
 
   <hr>
-  <p class="updated">Last updated 20 August 2026 &middot;
+  <p class="updated">Last updated 30 September 2026 &middot;
   <a href="../">Full privacy policy</a></p>
 
 </main>
