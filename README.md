@@ -32,9 +32,9 @@ another review pass.
 2. Replace `APP NAME` and `DATE`.
 3. Correct the "What this app stores" section to what that app actually persists — find
    the real `UserDefaults` keys, and confirm whether the app has a control that clears
-   them. Not every app does: Partial Panel has none, and Racetrack stores only two
-   review-prompt values with nothing worth clearing, which is why the shared policy
-   says *most* apps rather than *every* app.
+   them. Not every app does: Partial Panel has none, and Racetrack stores only its best
+   Entry Trainer streak and two rating-request values, with no clearing control, which is
+   why the shared policy says *most* apps rather than *every* app.
 4. If the app opens any URL — a citation chip, the *More from AutoPilot* screen — give it
    a "Links out of the app" section. The flat "no network requests" bullet alone
    misdescribes what the user watches happen.
