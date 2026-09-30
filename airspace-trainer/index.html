@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Airspace Trainer &mdash; Privacy &amp; Support</title>
+<title>Airspace Trainer: Privacy &amp; Support</title>
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -11,59 +11,84 @@
 
   <p class="eyebrow">Jack Post &middot; iOS Apps</p>
   <h1>Airspace Trainer</h1>
-  <p class="lede">This app collects no data about you and makes no network
-  connections of its own.</p>
+  <p class="lede">This app collects no data about you and makes no network requests of its
+  own.</p>
 
   <h2>What this app stores</h2>
-  <p>Two things, on your device only, and each has its own control that clears it:</p>
+  <p>Three things, on your device only. None of it leaves the device, and deleting the app
+  removes all of it.</p>
   <ul>
-    <li><strong>Which units you have attempted and passed</strong> &mdash; your place in the
-        course. The Learn screen has a <em>Reset progress</em> control at the bottom, which
-        appears once there is something to clear.</li>
+    <li><strong>Which units you have attempted and passed</strong>, which is your place in
+        the course (stored as <code>airspacetrainer.units.v1</code>). The Learn screen has a
+        <em>Reset progress</em> control at the bottom, which appears once there is something
+        to clear.</li>
     <li><strong>Which topics you have answered incorrectly</strong>, so the drill can bring
-        those back to you. The Progress tab has a <em>Clear history</em> control.</li>
+        those back to you (stored as <code>airspacetrainer.weakness.v1</code>). To clear it,
+        open the Drill tab, tap <em>Progress</em>, and use <em>Clear history</em>.</li>
+    <li><strong>Starting with version 1.0.1, when the app last asked you for a
+        rating</strong>: the version that asked (stored as
+        <code>AutoPilot.review.lastAskedVersion</code>) and the date it asked (stored as
+        <code>AutoPilot.review.lastAskedDate</code>). The app asks only right after you pass
+        a unit, at most once per version and no more than once in 120 days, and these two
+        records are how it keeps to that. They hold nothing else, and only deleting the app
+        clears them.</li>
   </ul>
-  <p>They are kept apart deliberately, and clearing one leaves the other alone &mdash;
-  starting the course again and starting the drill again are different things to want.
-  Nothing else is stored, none of it leaves the device, and deleting the app removes
-  both.</p>
+  <p>The course record and the drill history are kept apart deliberately, and clearing one
+  leaves the other alone. Starting the course again and starting the drill again are
+  different things to want.</p>
 
   <h2>What this app does not do</h2>
   <ul>
     <li>No account, sign-in, or email address</li>
     <li>No analytics, tracking, or advertising</li>
     <li>No third-party SDKs of any kind</li>
-    <li>No network requests of its own &mdash; every lesson, diagram, scenario and
-        regulation is inside the app, and it works fully in airplane mode. The one thing
-        that leaves is a link you tap: each regulation cites its section, and tapping the
-        citation opens that section on the eCFR &mdash; a US government site &mdash; in
-        your browser. Nothing about you goes with it</li>
-    <li>No location, camera, microphone, contacts, photos or health access &mdash; the
-        app has no permission prompt at all</li>
+    <li>No network requests of its own. Every lesson, diagram, scenario and regulation is
+        inside the app, and it works fully in airplane mode. What can leave the device is
+        listed under <em>Links out of the app</em> below, and each item there starts with
+        something you tap or pass.</li>
+    <li>No location, camera, microphone, contacts, photos or health access. The app has no
+        permission prompt at all.</li>
     <li>No purchases or subscriptions</li>
   </ul>
 
   <h2>Links out of the app</h2>
-  <p>Every rule the app teaches carries its citation, and tapping one hands that link to
-  your browser to open the relevant page of the eCFR &mdash; the US government's
-  electronic Code of Federal Regulations. The <em>More from AutoPilot</em> screen works the
-  same way, linking to the App Store and to flywithautopilot.com. The app itself sends
-  nothing: no identifier, no progress, nothing about you travels with that link. Once the
-  page is open in your browser, that site's privacy practices apply rather than this
-  one's.</p>
+  <ul>
+    <li><strong>Regulations.</strong> Every rule the app teaches carries its citation, and
+        tapping one opens that section of the eCFR, the US government's electronic Code of
+        Federal Regulations, in your browser.</li>
+    <li><strong>Privacy Policy and Support.</strong> On the <em>More</em> screen (the Drill
+        tab, then <em>Progress</em>, then <em>More from AutoPilot</em>), these open this page
+        in your browser.</li>
+    <li><strong>flywithautopilot.com.</strong> The last row of the <em>More</em> screen opens
+        it in your browser.</li>
+    <li><strong>Other AutoPilot apps.</strong> Starting with version 1.0.1, tapping one of
+        them on the <em>More</em> screen opens Apple's App Store page for that app inside
+        Airspace Trainer, rather than in a browser. The page is Apple's, and iOS loads it.
+        If it cannot load, the same listing opens in the App Store instead.</li>
+    <li><strong>Rating the app.</strong> Starting with version 1.0.1, Apple's own rating
+        prompt may appear shortly after you pass a unit, within the limits above. iOS draws
+        it, and a rating you choose to give goes to Apple.</li>
+    <li><strong>Sharing the app.</strong> Starting with version 1.0.1, a <em>Share Airspace
+        Trainer</em> button appears when you pass a unit. It opens the iOS share sheet with a
+        link to the app's App Store listing, and nothing is sent unless you pick somewhere to
+        send it.</li>
+  </ul>
+  <p>The app itself sends nothing with any of these: no identifier, no progress, nothing
+  about you. Once a page is open in your browser or in Apple's App Store view, that site's
+  or Apple's privacy practices apply rather than this one's.</p>
 
-  <h2>Support</h2>
+  <h2 id="support">Support</h2>
   <p>Questions, bugs, or a regulation you think the app has wrong:
   <a href="mailto:admin@flywithautopilot.com">admin@flywithautopilot.com</a>. Say which
   screen and which citation, and include your device and iOS version.</p>
   <p>Airspace Trainer teaches the US VFR airspace system from one picture. Use it to
-  learn the structure, not as the authority: figures shown as <em>typical</em> &mdash;
-  Class B to 10,000 MSL, Class C to 4,000 AGL, Class D to 2,500 AGL &mdash; are labelled
-  that way because a specific area's real dimensions are on the sectional chart and in
-  FAA Order JO 7400.11. Read the chart for the airspace you are actually flying in.</p>
+  learn the structure, not as the authority. Figures shown as <em>typical</em> (Class B to
+  10,000 MSL, Class C to 4,000 AGL, Class D to 2,500 AGL) are labeled that way because a
+  specific area's real dimensions are on the sectional chart and in FAA Order JO 7400.11.
+  Read the chart for the airspace you are actually flying in.</p>
 
   <hr>
-  <p class="updated">Last updated 20 August 2026 &middot;
+  <p class="updated">Last updated 30 September 2026 &middot;
   <a href="../">Full privacy policy</a></p>
 
 </main>
