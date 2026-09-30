@@ -11,7 +11,7 @@ Served by GitHub Pages from the repository root.
 | Page | URL |
 |---|---|
 | Shared policy | `https://jackda10.github.io/privacy/` |
-| Racetrack: IFR Hold Trainer | `https://jackda10.github.io/privacy/racetrack/` |
+| Racetrack | `https://jackda10.github.io/privacy/racetrack/` |
 | Pitot-Static | `https://jackda10.github.io/privacy/pitot-static/` |
 | Airspace Trainer | `https://jackda10.github.io/privacy/airspace-trainer/` |
 | Partial Panel Trainer | `https://jackda10.github.io/privacy/partial-panel/` |
