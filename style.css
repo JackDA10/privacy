@@ -8,7 +8,10 @@
   --ink:       #14213A;
   --ink-muted: #56617D;
   --rule:      #DFE3EC;
-  --gold:      #B8860B;
+  /* Links and the eyebrow are gold text on the white surface, so the gold must clear
+     WCAG 1.4.3's 4.5:1: #876208 is 5.55:1 on --surface and 5.23:1 on --bg. The old
+     #B8860B was 3.25:1. */
+  --gold:      #876208;
   --navy:      #1B2A4E;
 }
 
