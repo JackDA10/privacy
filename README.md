@@ -18,6 +18,7 @@ Served by GitHub Pages from the repository root.
 | IFR Clearance Trainer | `https://jackda10.github.io/privacy/ifr-clearance/` |
 | VOR & HSI Trainer | `https://jackda10.github.io/privacy/vor-hsi/` |
 | Top of Descent Calculator | `https://jackda10.github.io/privacy/top-of-descent/` |
+| IFR Lost Comms Trainer | `https://jackda10.github.io/privacy/lost-comms/` |
 | AutoPilot | `https://jackda10.github.io/privacy/autopilot/` |
 
 Use the **per-app** URL in App Store Connect, for both the Privacy Policy and Support
