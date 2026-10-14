@@ -22,6 +22,8 @@ Served by GitHub Pages from the repository root.
 | Aircraft Stability Trainer | `https://jackda10.github.io/privacy/stability/` |
 | IFR Lost Comms Trainer | `https://jackda10.github.io/privacy/lost-comms/` |
 | Airfoil AoA | `https://jackda10.github.io/privacy/airfoil/` |
+| Private Pilot Ground School | `https://jackda10.github.io/privacy/private-pilot-ground-school/` |
+| Instrument Pilot Ground School | `https://jackda10.github.io/privacy/instrument-pilot-ground-school/` |
 | AutoPilot | `https://jackda10.github.io/privacy/autopilot/` |
 
 Use the **per-app** URL in App Store Connect, for both the Privacy Policy and Support
