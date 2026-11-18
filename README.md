@@ -24,7 +24,7 @@ Served by GitHub Pages from the repository root.
 | Airfoil AoA | `https://jackda10.github.io/privacy/airfoil/` |
 | Private Pilot Ground School | `https://jackda10.github.io/privacy/private-pilot-ground-school/` |
 | Instrument Pilot Ground School | `https://jackda10.github.io/privacy/instrument-pilot-ground-school/` |
-| RightSeat | `https://jackda10.github.io/privacy/rightseat/` |
+| Wingside | `https://jackda10.github.io/privacy/wingside/` (`rightseat/` kept as a copy so the earlier link still works) |
 | AutoPilot | `https://jackda10.github.io/privacy/autopilot/` |
 
 Use the **per-app** URL in App Store Connect, for both the Privacy Policy and Support
