@@ -11,40 +11,69 @@
 
   <p class="eyebrow">Jack Post &middot; iOS Apps</p>
   <h1>Racetrack</h1>
-  <p class="lede">This app collects no data about you and makes no network
-  connections of its own.</p>
+  <p class="lede">This app collects no data about you. Your position, your flown holds and your
+  settings stay on your device, and nothing is sent to us or to anyone else.</p>
 
   <h2>What this app stores</h2>
-  <p>Starting with version 2.1, the app keeps three small values, on your device only. <strong>One
+  <p>The app keeps a few small values on your device only. <strong>One
   is your best streak in the Entry Trainer</strong>: the longest run of entries you have answered correctly in a
   row, kept so the trainer can show it again the next time you open the app. The other two are the
   app version and the date of the last time the app asked whether you would like to rate it, kept
-  so that it asks at most once per version and never twice within 120 days. That is the entire
-  contents.</p>
+  so that it asks at most once per version and never twice within 120 days. Starting with version
+  2.2, the Live tab also keeps four settings: whether the spoken callouts are on, whether the chart is
+  shown, how bright it is, and whether the map turns track up.</p>
+  <p><strong>Holds you fly on the Live tab.</strong> When you end a hold, the app saves it on your
+  device so you can look at it again under Past holds: the fix and the hold you set up, the entry
+  called and the entry flown, the lap times, and your track as a list of positions, times, altitudes
+  and speeds, about one per second. These files never leave the app. Like any app's data, they are
+  included in your own iCloud or computer backup of the device if you make one. You can delete any
+  saved hold with a swipe under Past holds, and deleting the app removes them all.</p>
   <p><strong>Nothing else about your progress is saved.</strong> Lesson position, quiz scores, the
-  holds you have worked and which entries you got right live in memory while the app is open, and
-  start fresh the next time you launch it. The app has no account, no identifier, and no file it
-  writes.</p>
+  holds you have worked in the trainers and which entries you got right live in memory while the app
+  is open, and start fresh the next time you launch it. The app has no account and no
+  identifier.</p>
   <p>Earlier versions kept two different values for the rating request: a count of correct entries,
   and a note that the request had been made. Version 2.1 deletes both the first time it opens.</p>
-  <p>There is no control inside the app for clearing the three values. Deleting the app removes
-  them.</p>
+  <p>There is no control inside the app for clearing the streak, the rating values or the Live
+  settings. Deleting the app removes them.</p>
+
+  <h2>Location</h2>
+  <p>The app asks for your location the first time you open the Live tab, and uses it only while
+  that tab is in use. It shows your airplane on the map and works out your course to a fix you
+  pick, so a hold can be built around the entry you want.
+  Fly it live follows your airplane around the hold you set up: it calls the entry, times the legs
+  and draws your track. It keeps following while the screen is locked, so the callouts keep
+  coming, and it stops when you tap <strong>End hold</strong>. Your position is never sent anywhere.
+  The Demo on the Live tab uses a simulated airplane and needs no location at all. You can turn
+  location off for Racetrack at any time in the iPhone's Settings.</p>
+
+  <h2>Racetrack Pro</h2>
+  <p>Flying a live hold on your own GPS is part of <strong>Racetrack Pro</strong>, a one-time
+  purchase. Apple handles the purchase and the payment; the app only asks the App Store whether this
+  Apple Account owns Pro, and never sees your name, email or payment details. If you downloaded
+  Racetrack before version 2.2, Pro is yours at no charge: the app reads the date of your original
+  download from the App Store's own receipt on the device, and nothing is sent to us.</p>
+
+  <h2>Training aid, not for navigation</h2>
+  <p>Racetrack is for practicing holds. It is not certified for navigation and must not be used as
+  your primary means of navigation. Fly by your certified instruments, your clearance and ATC. The
+  app's GPS position, leg timing and callouts can be wrong or late.</p>
 
   <h2>What this app does not do</h2>
   <ul>
     <li>No account, sign-in, or email address</li>
     <li>No analytics, tracking, or advertising</li>
     <li>No third-party SDKs of any kind</li>
-    <li>No network requests of its own. Every lesson, diagram, hold and quiz question is inside
-        the app, and it works fully in airplane mode. Only the App Store pages on the More screen
-        need a connection, and those are Apple's.</li>
-    <li>No location, camera, microphone, contacts, photos or health access. The app has no
-        permission prompt at all, and it does not read your GPS position.</li>
-    <li>No purchases or subscriptions</li>
+    <li>No network requests of its own. Every lesson, diagram, hold, quiz question, the IFR chart and
+        the list of fixes are inside the app. The street map under the chart on the Live tab is Apple
+        Maps, which iOS loads from Apple; with no connection the chart and your track still draw.
+        The App Store pages on the More screen and the purchase are Apple's too.</li>
+    <li>No camera, microphone, contacts, photos or health access</li>
+    <li>No subscriptions</li>
   </ul>
 
   <h2>Links out of the app</h2>
-  <p>The Lessons menu has three items. <strong>Support</strong> and <strong>Privacy Policy</strong>
+  <p>The Lessons menu has four items. <strong>Quiz</strong> opens the quiz inside the app. <strong>Support</strong> and <strong>Privacy Policy</strong>
   open this page in your browser. <strong>More from AutoPilot</strong> opens a screen inside the app
   that lists the other AutoPilot apps, repeats the Privacy Policy and Support links, and links to
   flywithautopilot.com in your browser.</p>
@@ -74,7 +103,7 @@
   the clearance you have.</p>
 
   <hr>
-  <p class="updated">Last updated 2 October 2026 &middot;
+  <p class="updated">Last updated [2.2 release day] &middot;
   <a href="../">Full privacy policy</a></p>
 
 </main>
