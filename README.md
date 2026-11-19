@@ -26,6 +26,7 @@ Served by GitHub Pages from the repository root.
 | Instrument Pilot Ground School | `https://jackda10.github.io/privacy/instrument-pilot-ground-school/` |
 | Dualwise | `https://jackda10.github.io/privacy/dualwise/` |
 | Dualwise | `https://jackda10.github.io/privacy/dualwise/` (`wingside/` and `rightseat/` kept as copies so earlier links still work) |
+| Clip Shear | `https://jackda10.github.io/privacy/clip-shear/` |
 | AutoPilot | `https://jackda10.github.io/privacy/autopilot/` |
 
 Use the **per-app** URL in App Store Connect, for both the Privacy Policy and Support
